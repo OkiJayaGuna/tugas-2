@@ -1,43 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="maincontainer">
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-        <div class="container">
-            <h3>BUKU SATU</h3>
-            <br>
-            <button><b>Lihat</b></button>
-        </div>
-    </div>
-</body>
-</html>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.maincontainer {
+    display: grid;
+    align-self: baselie;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.container {
+    background-color: rgb(170, 169, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(8, 4, 250);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 70px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4873ff;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .maincontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maincontainer {
+        grid-template-columns: 1fr;
+    }
+}
