@@ -5,11 +5,11 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(107, 107, 107);
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,9 +21,9 @@ body {
 }
 
 a{
-    color: white;
+    color: rgb(250, 250, 250);
     text-decoration: none;
-    background-color: rgb(36, 97, 219);
+    background-color: rgb(255, 0, 0);
     color: white;
     border: none;
     padding: 10px 70px;
@@ -34,7 +34,7 @@ a{
 }
 
 a:hover {
-    background-color: #013bfa;
+    background-color: #fa6501;
     color: white;
 }
 
