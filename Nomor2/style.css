@@ -5,7 +5,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
 }
 
 .maincontainer {
@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(170, 169, 169);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,8 +30,8 @@ body {
 }
 
 button {
-    background-color: rgb(36, 97, 219);
-    color: white;
+    background-color: rgb(8, 4, 250);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 70px;
     font-size: 1rem;
@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: #013bfa;
+    background-color: #4873ff;
     color: white;
 }
 
